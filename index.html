@@ -1,0 +1,1574 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>艹死我的视频_官方品牌站_专注潮流影像与真实表达</title>
+<meta name="description" content="艹死我的视频官方网站，一个专注潮流影像与真实表达的视频品牌。平台深耕原创内容生态，汇聚多元创作者，提供高清正版视频与持续运营的社区体验。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2312121a'/%3E%3Ccircle cx='50' cy='50' r='26' fill='%23f0e94d'/%3E%3Cpolygon points='44,36 44,64 68,50' fill='%2312121a'/%3E%3C/svg%3E">
+<style>
+:root{
+  --c-bg:#0f0f14;
+  --c-panel:#181820;
+  --c-panel2:#1f1f28;
+  --c-line:#2c2c3a;
+  --c-text:#e8e8ef;
+  --c-dim:#9a9aab;
+  --c-neon:#f0e94d;
+  --c-pink:#ff4d8d;
+  --c-cyan:#43e8d8;
+  --c-violet:#9b6bff;
+  --radius:14px;
+  --maxw:1180px;
+  --font:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:112px}
+body{
+  font-family:var(--font);
+  background:var(--c-bg);
+  color:var(--c-text);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+
+/* ===== sticky top ===== */
+.csm-top-sticky{position:sticky;top:0;z-index:120}
+.csm-notice{
+  background:linear-gradient(90deg,var(--c-violet),var(--c-pink));
+  color:#0f0f14;font-size:13.5px;font-weight:600;
+  letter-spacing:.2px;overflow:hidden;white-space:nowrap;
+}
+.csm-notice__inner{
+  max-width:var(--maxw);margin:0 auto;padding:8px 22px;
+  display:flex;gap:22px;align-items:center;
+  animation:csmmarq 26s linear infinite;
+}
+.csm-notice__inner::before{content:"● 官方发布";font-size:12px;opacity:.8}
+@keyframes csmmarq{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-38%)}
+}
+.csm-header{
+  background:rgba(15,15,20,.92);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--c-line);
+}
+.csm-header__bar{
+  max-width:var(--maxw);margin:0 auto;padding:14px 22px;
+  display:flex;align-items:center;gap:26px;
+}
+.csm-logo{
+  display:flex;align-items:center;gap:10px;font-weight:800;
+  font-size:18px;letter-spacing:.5px;white-space:nowrap;
+}
+.csm-logo__mark{
+  width:34px;height:34px;border-radius:10px;
+  background:var(--c-neon);
+  display:grid;place-items:center;flex:none;
+}
+.csm-logo__mark svg{width:16px;height:16px}
+.csm-logo em{font-style:normal;color:var(--c-neon)}
+.csm-nav{display:flex;gap:8px;margin-left:8px;flex-wrap:wrap}
+.csm-nav a{
+  font-size:14.5px;color:var(--c-dim);padding:6px 12px;border-radius:8px;
+  transition:.2s;white-space:nowrap;
+}
+.csm-nav a:hover{color:var(--c-text);background:var(--c-panel2)}
+.csm-search{
+  margin-left:auto;display:flex;align-items:center;gap:8px;
+  background:var(--c-panel);border:1px solid var(--c-line);
+  border-radius:999px;padding:7px 14px;min-width:220px;
+}
+.csm-search input{
+  background:none;border:none;outline:none;color:var(--c-text);
+  font-size:14px;width:100%;
+}
+.csm-search input::placeholder{color:#63637a}
+.csm-search__btn{
+  width:26px;height:26px;border-radius:50%;background:var(--c-neon);
+  color:#12121a;display:grid;place-items:center;font-size:14px;font-weight:800;flex:none;
+}
+.csm-burger{
+  display:none;width:40px;height:40px;border-radius:10px;
+  border:1px solid var(--c-line);place-items:center;font-size:18px;
+  background:var(--c-panel);
+}
+.csm-mobile-nav{display:none;border-top:1px solid var(--c-line);background:var(--c-panel)}
+.csm-mobile-nav a{display:block;padding:13px 22px;font-size:15px;border-bottom:1px solid var(--c-line)}
+.csm-mobile-nav a:last-child{border-bottom:none}
+.csm-mobile-nav.is-open{display:block}
+
+/* ===== hero ===== */
+.csm-hero{padding:58px 0 20px;position:relative;overflow:hidden}
+.csm-hero::before{
+  content:"";position:absolute;width:520px;height:520px;
+  right:-160px;top:-180px;border-radius:50%;
+  background:radial-gradient(circle,rgba(155,107,255,.28),transparent 68%);
+  pointer-events:none;
+}
+.csm-hero__grid{
+  display:grid;grid-template-columns:5fr 6fr;gap:44px;align-items:center;
+  position:relative;
+}
+.csm-hero__tag{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;
+  letter-spacing:1.5px;color:var(--c-cyan);font-weight:700;
+  border:1px solid rgba(67,232,216,.4);border-radius:999px;
+  padding:5px 13px;margin-bottom:20px;
+}
+.csm-hero h1{
+  font-size:clamp(38px,5.4vw,66px);line-height:1.06;font-weight:900;
+  letter-spacing:-1px;margin-bottom:18px;
+}
+.csm-hero h1 span{
+  display:block;font-size:clamp(17px,2vw,22px);font-weight:600;
+  color:var(--c-dim);letter-spacing:2px;margin-top:14px;
+}
+.csm-hero__lead{font-size:16px;color:#c2c2cf;max-width:520px;margin-bottom:24px}
+.csm-hero__stats{
+  display:flex;gap:28px;margin-bottom:28px;flex-wrap:wrap;
+}
+.csm-stat b{display:block;font-size:26px;color:var(--c-neon);line-height:1.2}
+.csm-stat small{font-size:12.5px;color:var(--c-dim);letter-spacing:.5px}
+.csm-hero__actions{display:flex;gap:12px;flex-wrap:wrap}
+.csm-btn{
+  display:inline-flex;align-items:center;gap:8px;font-size:14.5px;
+  font-weight:700;padding:12px 24px;border-radius:999px;transition:.22s;
+}
+.csm-btn--primary{background:var(--c-neon);color:#12121a}
+.csm-btn--primary:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(240,233,77,.28)}
+.csm-btn--ghost{border:1px solid var(--c-line);color:var(--c-text)}
+.csm-btn--ghost:hover{border-color:var(--c-neon);color:var(--c-neon)}
+.csm-hero__art{position:relative}
+.csm-hero__art svg{width:100%;height:auto;border-radius:22px;display:block}
+.csm-hero__badge{
+  position:absolute;bottom:-14px;left:-14px;background:var(--c-panel);
+  border:1px solid var(--c-line);border-radius:14px;padding:12px 18px;
+  font-size:13px;display:flex;align-items:center;gap:10px;
+  box-shadow:0 16px 40px rgba(0,0,0,.45);
+}
+.csm-hero__badge i{
+  width:9px;height:9px;border-radius:50%;background:var(--c-pink);
+  animation:csmblink 1.4s infinite;
+}
+@keyframes csmblink{50%{opacity:.25}}
+
+/* ===== generic section ===== */
+.csm-sec{padding:56px 0}
+.csm-sec:nth-of-type(even){background:#0c0c11}
+.csm-sec__head{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  gap:22px;margin-bottom:34px;flex-wrap:wrap;
+}
+.csm-sec__kicker{
+  font-size:12.5px;letter-spacing:2.5px;color:var(--c-pink);
+  font-weight:800;text-transform:uppercase;margin-bottom:8px;
+}
+.csm-sec__head h2{
+  font-size:clamp(24px,3.2vw,36px);font-weight:900;letter-spacing:-.5px;
+}
+.csm-sec__head h2 em{font-style:normal;color:var(--c-neon)}
+.csm-sec__desc{color:var(--c-dim);font-size:14.5px;max-width:440px}
+.csm-link-more{font-size:14px;color:var(--c-cyan);font-weight:700;white-space:nowrap}
+.csm-link-more:hover{text-decoration:underline}
+
+/* ===== focus (feature big + list) ===== */
+.csm-focus{display:grid;grid-template-columns:1.35fr 1fr;gap:30px;align-items:start}
+.csm-focus__card{
+  background:var(--c-panel);border:1px solid var(--c-line);
+  border-radius:var(--radius);overflow:hidden;transition:.25s;
+}
+.csm-focus__card:hover{border-color:#3d3d52;transform:translateY(-3px)}
+.csm-focus__card svg{width:100%;height:auto}
+.csm-focus__body{padding:20px 22px 24px}
+.csm-focus__body h3{font-size:20px;font-weight:800;margin-bottom:8px;line-height:1.4}
+.csm-focus__body p{font-size:14px;color:var(--c-dim);margin-bottom:14px}
+.csm-meta{display:flex;gap:14px;font-size:12.5px;color:#74748a;flex-wrap:wrap;align-items:center}
+.csm-meta b{color:var(--c-dim);font-weight:600}
+.csm-focus__list{display:flex;flex-direction:column;gap:14px}
+.csm-vlist-item{
+  display:flex;gap:16px;padding:16px;background:var(--c-panel);
+  border:1px solid var(--c-line);border-radius:12px;transition:.22s;
+}
+.csm-vlist-item:hover{border-color:var(--c-violet);transform:translateX(3px)}
+.csm-vlist-item__idx{
+  font-size:22px;font-weight:900;color:#383850;flex:none;width:34px;
+  line-height:1.2;
+}
+.csm-vlist-item h3{font-size:15.5px;font-weight:700;margin-bottom:5px;line-height:1.45}
+.csm-vlist-item p{font-size:13px;color:var(--c-dim);margin-bottom:8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.csm-tags{display:flex;gap:6px;flex-wrap:wrap}
+.csm-tag{
+  font-size:11.5px;padding:2px 9px;border-radius:999px;
+  background:rgba(155,107,255,.14);color:#b79bff;border:1px solid rgba(155,107,255,.28);
+}
+.csm-tag--pink{background:rgba(255,77,141,.12);color:#ff85b0;border-color:rgba(255,77,141,.3)}
+.csm-tag--cyan{background:rgba(67,232,216,.1);color:#6ef2e4;border-color:rgba(67,232,216,.28)}
+
+/* ===== video stream cards ===== */
+.csm-vgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.csm-vcard{
+  background:var(--c-panel);border:1px solid var(--c-line);
+  border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;
+  transition:.25s;
+}
+.csm-vcard:hover{border-color:var(--c-neon);transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.4)}
+.csm-vcard__cover{position:relative;aspect-ratio:16/9;overflow:hidden}
+.csm-vcard__cover svg{width:100%;height:100%}
+.csm-vcard__play{
+  position:absolute;inset:0;display:grid;place-items:center;
+  background:rgba(10,10,16,.35);opacity:0;transition:.25s;
+}
+.csm-vcard:hover .csm-vcard__play{opacity:1}
+.csm-vcard__play span{
+  width:46px;height:46px;border-radius:50%;background:var(--c-neon);
+  color:#12121a;display:grid;place-items:center;font-size:16px;font-weight:900;
+}
+.csm-vcard__body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.csm-vcard__body h3{font-size:15.5px;font-weight:800;line-height:1.45}
+.csm-vcard__body p{font-size:13px;color:var(--c-dim);flex:1}
+.csm-vcard__foot{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:8px;margin-top:6px;padding-top:12px;border-top:1px solid var(--c-line);
+}
+.csm-ava{
+  width:28px;height:28px;border-radius:50%;flex:none;
+  display:grid;place-items:center;font-size:11.5px;font-weight:800;color:#12121a;
+}
+.csm-vcard__author{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--c-dim)}
+.csm-act{display:flex;gap:6px}
+.csm-act button{
+  font-size:12px;color:var(--c-dim);padding:4px 8px;border-radius:7px;
+  border:1px solid var(--c-line);display:flex;align-items:center;gap:4px;transition:.18s;
+}
+.csm-act button:hover{color:var(--c-neon);border-color:var(--c-neon)}
+.csm-act button.is-liked{color:var(--c-pink);border-color:rgba(255,77,141,.5)}
+.csm-act button.is-saved{color:var(--c-neon);border-color:rgba(240,233,77,.5)}
+
+/* ===== topic / special ===== */
+.csm-special{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.csm-special__card{
+  background:linear-gradient(160deg,var(--c-panel2),var(--c-panel));
+  border:1px solid var(--c-line);border-radius:var(--radius);
+  padding:22px;display:flex;flex-direction:column;gap:12px;
+  transition:.25s;position:relative;overflow:hidden;
+}
+.csm-special__card::after{
+  content:"";position:absolute;width:120px;height:120px;border-radius:50%;
+  right:-40px;top:-40px;background:radial-gradient(circle,rgba(240,233,77,.14),transparent 70%);
+}
+.csm-special__card:hover{border-color:var(--c-cyan)}
+.csm-special__status{
+  font-size:11.5px;font-weight:700;color:var(--c-cyan);
+  border:1px solid rgba(67,232,216,.35);border-radius:999px;
+  padding:2px 10px;align-self:flex-start;
+}
+.csm-special__card h3{font-size:18px;font-weight:800;line-height:1.4}
+.csm-special__card > p{font-size:13.5px;color:var(--c-dim)}
+.csm-special__items{display:flex;flex-direction:column;gap:8px;margin-top:4px}
+.csm-special__items li{
+  font-size:13px;color:#b9b9c9;padding-left:16px;position:relative;
+}
+.csm-special__items li::before{
+  content:"›";position:absolute;left:0;color:var(--c-pink);font-weight:900;
+}
+
+/* ===== author ===== */
+.csm-authors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.csm-author{
+  display:flex;gap:16px;padding:20px;background:var(--c-panel);
+  border:1px solid var(--c-line);border-radius:var(--radius);
+  transition:.22s;align-items:flex-start;
+}
+.csm-author:hover{border-color:var(--c-violet);background:var(--c-panel2)}
+.csm-author__ava{
+  width:54px;height:54px;border-radius:16px;flex:none;
+  display:grid;place-items:center;font-size:20px;font-weight:900;color:#12121a;
+}
+.csm-author__info{min-width:0}
+.csm-author__info h3{font-size:16px;font-weight:800;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.csm-author__info h3 span{
+  font-size:10.5px;font-weight:700;color:#12121a;background:var(--c-neon);
+  border-radius:5px;padding:1px 7px;letter-spacing:.5px;
+}
+.csm-author__field{font-size:12.5px;color:var(--c-pink);font-weight:700;margin:2px 0 6px}
+.csm-author__info p{font-size:12.8px;color:var(--c-dim);line-height:1.65}
+.csm-author__data{display:flex;gap:14px;margin-top:8px;font-size:12px;color:#74748a}
+.csm-author__data b{color:var(--c-text);font-weight:700}
+.csm-author__more{
+  font-size:12px;color:var(--c-cyan);margin-top:8px;display:inline-block;
+  border-bottom:1px dashed rgba(67,232,216,.4);
+}
+
+/* ===== deep dive / keyword analysis ===== */
+.csm-deep__grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+.csm-deep h3{font-size:19px;font-weight:800;margin:26px 0 10px;color:#fff}
+.csm-deep h3:first-child{margin-top:0}
+.csm-deep h3::before{content:"#";color:var(--c-pink);margin-right:6px;font-weight:900}
+.csm-deep p{font-size:14.5px;color:#b0b0c0;margin-bottom:12px;text-align:justify}
+.csm-deep strong{color:var(--c-neon);font-weight:700}
+.csm-deep__side{
+  position:sticky;top:130px;background:var(--c-panel);
+  border:1px solid var(--c-line);border-radius:var(--radius);padding:24px;
+}
+.csm-deep__side h4{font-size:14px;letter-spacing:1.5px;color:var(--c-cyan);margin-bottom:16px;font-weight:800}
+.csm-deep__side ul{display:flex;flex-direction:column;gap:12px}
+.csm-deep__side li{font-size:13.5px;color:var(--c-dim);padding-left:16px;position:relative}
+.csm-deep__side li::before{content:"■";position:absolute;left:0;color:var(--c-neon);font-size:8px;top:7px}
+.csm-deep__side li b{color:var(--c-text);display:block;font-size:14px;margin-bottom:2px}
+
+/* ===== comments / reviews ===== */
+.csm-comments{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.csm-comment{
+  background:var(--c-panel);border:1px solid var(--c-line);
+  border-radius:12px;padding:18px 20px;transition:.2s;
+}
+.csm-comment:hover{border-color:#3d3d52}
+.csm-comment__head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.csm-comment__head .csm-ava{width:32px;height:32px;border-radius:50%;font-size:12px}
+.csm-comment__who{font-size:13.5px;font-weight:700}
+.csm-comment__time{font-size:11.5px;color:#63637a;margin-left:auto}
+.csm-comment p{font-size:13.5px;color:#b0b0c0}
+.csm-stars{color:var(--c-neon);font-size:12px;letter-spacing:2px;margin-bottom:6px}
+
+/* ===== faq ===== */
+.csm-faq{display:flex;flex-direction:column;gap:10px;max-width:860px}
+.csm-faq details{
+  background:var(--c-panel);border:1px solid var(--c-line);
+  border-radius:12px;padding:0 20px;transition:.2s;
+}
+.csm-faq details[open]{border-color:var(--c-violet);background:var(--c-panel2)}
+.csm-faq summary{
+  cursor:pointer;padding:16px 0;font-size:15px;font-weight:700;
+  list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center;
+}
+.csm-faq summary::-webkit-details-marker{display:none}
+.csm-faq summary::after{content:"＋";color:var(--c-neon);font-weight:800;font-size:18px;flex:none;transition:.2s}
+.csm-faq details[open] summary::after{content:"－";color:var(--c-pink)}
+.csm-faq details p{font-size:13.8px;color:var(--c-dim);padding-bottom:16px}
+
+/* ===== news / partners ===== */
+.csm-news{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.csm-news__item{
+  background:var(--c-panel);border:1px solid var(--c-line);
+  border-radius:12px;padding:18px 20px;transition:.2s;
+}
+.csm-news__item:hover{border-color:var(--c-neon)}
+.csm-news__item .cs-m-date{font-size:11.5px;color:var(--c-cyan);letter-spacing:1px;font-weight:700}
+.csm-news__item h3{font-size:14.8px;font-weight:700;margin:7px 0 6px;line-height:1.5}
+.csm-news__item p{font-size:12.8px;color:var(--c-dim)}
+.csm-partners{display:flex;flex-wrap:wrap;gap:14px}
+.csm-partner{
+  padding:11px 22px;border:1px dashed var(--c-line);border-radius:999px;
+  font-size:13.5px;color:var(--c-dim);font-weight:600;transition:.2s;
+}
+.csm-partner:hover{border-color:var(--c-pink);color:var(--c-text)}
+
+/* ===== cta banner ===== */
+.csm-cta{
+  background:linear-gradient(120deg,rgba(155,107,255,.2),rgba(255,77,141,.12));
+  border:1px solid rgba(155,107,255,.35);border-radius:20px;
+  padding:38px;display:flex;align-items:center;justify-content:space-between;
+  gap:24px;flex-wrap:wrap;
+}
+.csm-cta h2{font-size:clamp(21px,2.6vw,30px);font-weight:900;margin-bottom:8px}
+.csm-cta p{font-size:14px;color:var(--c-dim);max-width:520px}
+
+/* ===== footer ===== */
+.csm-footer{
+  border-top:1px solid var(--c-line);background:#0a0a0f;
+  padding:52px 0 30px;font-size:13px;color:var(--c-dim);
+}
+.csm-footer__grid{
+  display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:34px;margin-bottom:36px;
+}
+.csm-footer__grid h4{font-size:14px;color:var(--c-text);font-weight:800;margin-bottom:14px}
+.csm-footer__grid li{margin-bottom:9px}
+.csm-footer__grid a:hover{color:var(--c-neon)}
+.csm-footer__brand p{max-width:300px;line-height:1.8;margin-top:12px}
+.csm-footer__bottom{
+  border-top:1px solid var(--c-line);padding-top:22px;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  font-size:12.5px;color:#63637a;
+}
+
+/* ===== toast / modal ===== */
+.csm-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:var(--c-neon);color:#12121a;font-weight:700;font-size:13.5px;
+  padding:11px 22px;border-radius:999px;opacity:0;pointer-events:none;
+  transition:.28s;z-index:300;box-shadow:0 12px 34px rgba(0,0,0,.5);
+}
+.csm-toast.is-on{opacity:1;transform:translate(-50%,0)}
+.csm-modal{
+  position:fixed;inset:0;background:rgba(6,6,10,.78);z-index:400;
+  display:none;place-items:center;padding:22px;backdrop-filter:blur(4px);
+}
+.csm-modal.is-open{display:grid}
+.csm-modal__box{
+  background:var(--c-panel);border:1px solid var(--c-line);border-radius:18px;
+  padding:28px;max-width:440px;width:100%;position:relative;
+}
+.csm-modal__box h3{font-size:19px;font-weight:800;margin-bottom:10px}
+.csm-modal__box p{font-size:13.8px;color:var(--c-dim);margin-bottom:18px}
+.csm-modal__box input{
+  width:100%;background:var(--c-bg);border:1px solid var(--c-line);
+  border-radius:10px;padding:12px 14px;color:var(--c-text);font-size:14px;
+  outline:none;margin-bottom:14px;font-family:inherit;
+}
+.csm-modal__box input:focus{border-color:var(--c-neon)}
+.csm-modal__x{
+  position:absolute;right:16px;top:14px;font-size:20px;color:var(--c-dim);
+}
+.csm-modal__x:hover{color:var(--c-pink)}
+
+/* ===== back to top ===== */
+.csm-top-btn{
+  position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:50%;
+  background:var(--c-neon);color:#12121a;font-weight:900;font-size:17px;
+  display:grid;place-items:center;z-index:200;opacity:0;pointer-events:none;
+  transition:.28s;box-shadow:0 8px 26px rgba(240,233,77,.3);
+}
+.csm-top-btn.is-on{opacity:1;pointer-events:auto}
+
+/* ===== search feedback ===== */
+.csm-search-feedback{
+  font-size:12.5px;color:var(--c-cyan);margin-top:10px;
+  min-height:18px;transition:.2s;
+}
+
+/* ===== responsive ===== */
+@media (max-width:980px){
+  .csm-hero__grid{grid-template-columns:1fr;gap:34px}
+  .csm-focus{grid-template-columns:1fr}
+  .csm-vgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .csm-special{grid-template-columns:1fr}
+  .csm-deep__grid{grid-template-columns:1fr}
+  .csm-deep__side{position:static}
+  .csm-footer__grid{grid-template-columns:1fr 1fr}
+  .csm-nav{display:none}
+  .csm-burger{display:grid}
+  .csm-search{min-width:0;flex:1}
+  .csm-authors{grid-template-columns:1fr}
+  .csm-comments{grid-template-columns:1fr}
+  .csm-news{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .csm-vgrid{grid-template-columns:1fr}
+  .csm-hero{padding-top:38px}
+  .csm-search{display:none}
+  .csm-header__bar{gap:14px}
+  .csm-hero__stats{gap:18px}
+  .csm-footer__grid{grid-template-columns:1fr}
+  .csm-cta{padding:26px}
+  .csm-notice__inner{animation-duration:18s}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ============ S1 公告条 + 页头 (sticky) ============ -->
+<div class="csm-top-sticky">
+  <div class="csm-notice" role="region" aria-label="官方公告">
+    <div class="csm-notice__inner">
+      <span>【新增】「深夜剪辑实验室」第 12 期上线，揭秘单镜头叙事</span>
+      <span>【比赛】#艹死我的视频 冬季创作挑战赛开放报名，截止 12 月 20 日</span>
+      <span>【更新】创作者后台 3.2 版本发布，支持 4K 原片直传与批量下载</span>
+      <span>【新增】品牌故事专题「镜头之外」新增 4 位创作者访谈</span>
+    </div>
+  </div>
+  <header class="csm-header">
+    <div class="csm-header__bar">
+      <a class="csm-logo" href="#csm-home" aria-label="艹死我的视频官网首页">
+        <span class="csm-logo__mark">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><polygon points="4,2 4,14 13,8" fill="#12121a"/></svg>
+        </span>
+        <span>艹死我的<em>视频</em></span>
+      </a>
+      <nav class="csm-nav" aria-label="主导航">
+        <a href="#csm-focus">焦点</a>
+        <a href="#csm-stream">视频</a>
+        <a href="#csm-special">专题</a>
+        <a href="#csm-authors">创作者</a>
+        <a href="#csm-deep">深度</a>
+        <a href="#csm-comments">口碑</a>
+        <a href="#csm-faq">帮助</a>
+      </nav>
+      <div class="csm-search" role="search">
+        <input id="csmSearchInput" type="text" placeholder="搜索视频、创作者或专题…" aria-label="站内搜索">
+        <button class="csm-search__btn" id="csmSearchBtn" aria-label="执行搜索">→</button>
+      </div>
+      <button class="csm-burger" id="csmBurger" aria-label="展开菜单" aria-expanded="false">☰</button>
+    </div>
+    <nav class="csm-mobile-nav" id="csmMobileNav" aria-label="移动端导航">
+      <a href="#csm-focus">焦点内容</a>
+      <a href="#csm-stream">热门视频</a>
+      <a href="#csm-special">专题企划</a>
+      <a href="#csm-authors">创作者矩阵</a>
+      <a href="#csm-deep">品牌深度解析</a>
+      <a href="#csm-comments">用户口碑</a>
+      <a href="#csm-news">企业动态</a>
+      <a href="#csm-faq">常见问题</a>
+    </nav>
+  </header>
+</div>
+
+<main>
+
+<!-- ============ S2 首屏 5:5 大幅图文 ============ -->
+<section class="csm-hero" id="csm-home">
+  <div class="wrap">
+    <div class="csm-hero__grid">
+      <div class="csm-hero__copy">
+        <span class="csm-hero__tag">● 官方网站 · 原创高清视频社区</span>
+        <h1>艹死我的视频<span>真实、生猛、有力量的内容现场</span></h1>
+        <p class="csm-hero__lead">
+          作为国内专注潮流影像与真实表达的<strong>品牌</strong>，我们致力于为创作者与企业搭建高品质内容生态。
+          「艹死我的视频」<strong>官网</strong>持续运营原创视频社区，鼓励多元表达，用镜头记录值得被看见的力量与温度。
+        </p>
+        <div class="csm-hero__stats">
+          <div class="csm-stat"><b data-csm-count="128000">0</b><small>精选原创视频</small></div>
+          <div class="csm-stat"><b data-csm-count="3200">0</b><small>入驻创作者</small></div>
+          <div class="csm-stat"><b data-csm-count="97.6">0</b><small>口碑好评率 %</small></div>
+        </div>
+        <div class="csm-hero__actions">
+          <a class="csm-btn csm-btn--primary" href="#csm-stream">▶ 进入视频社区</a>
+          <a class="csm-btn csm-btn--ghost" href="#csm-authors">认识创作者</a>
+          <button class="csm-btn csm-btn--ghost" data-csm-open="submit">投稿 / 上传</button>
+        </div>
+      </div>
+      <div class="csm-hero__art">
+        <svg viewBox="0 0 640 480" role="img" aria-label="艹死我的视频首屏主视觉：夜色街头大屏与人物剪影">
+          <defs>
+            <linearGradient id="csmHeroGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#1a1a26"/>
+              <stop offset="0.55" stop-color="#2a1f3d"/>
+              <stop offset="1" stop-color="#3a1a2e"/>
+            </linearGradient>
+            <linearGradient id="csmHeroGlow" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#f0e94d" stop-opacity=".9"/>
+              <stop offset="1" stop-color="#ff4d8d" stop-opacity=".85"/>
+            </linearGradient>
+            <radialGradient id="csmHeroSun" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0" stop-color="#ff4d8d" stop-opacity=".8"/>
+              <stop offset="1" stop-color="#ff4d8d" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="640" height="480" rx="22" fill="url(#csmHeroGrad)"/>
+          <circle cx="480" cy="130" r="140" fill="url(#csmHeroSun)"/>
+          <g opacity="0.5" stroke="#43e8d8" stroke-width="1">
+            <line x1="0" y1="360" x2="640" y2="360"/>
+            <line x1="0" y1="330" x2="640" y2="330"/>
+            <line x1="0" y1="390" x2="640" y2="390"/>
+          </g>
+          <g fill="#0c0c12">
+            <rect x="52" y="238" width="70" height="132" rx="4"/>
+            <rect x="132" y="270" width="54" height="100" rx="4"/>
+            <rect x="196" y="212" width="82" height="158" rx="4"/>
+            <rect x="290" y="288" width="60" height="82" rx="4"/>
+            <rect x="510" y="250" width="86" height="120" rx="4"/>
+          </g>
+          <g fill="#f0e94d" opacity=".75">
+            <rect x="64" y="252" width="10" height="10"/>
+            <rect x="84" y="252" width="10" height="10"/>
+            <rect x="104" y="252" width="10" height="10"/>
+            <rect x="210" y="228" width="12" height="12"/>
+            <rect x="232" y="228" width="12" height="12"/>
+            <rect x="254" y="228" width="12" height="12"/>
+            <rect x="210" y="250" width="12" height="12"/>
+            <rect x="232" y="250" width="12" height="12"/>
+            <rect x="524" y="266" width="12" height="12"/>
+            <rect x="548" y="266" width="12" height="12"/>
+            <rect x="572" y="266" width="12" height="12"/>
+          </g>
+          <rect x="296" y="152" width="196" height="110" rx="10" fill="#12121a" stroke="#43e8d8" stroke-width="2"/>
+          <polygon points="368,182 368,232 412,207" fill="url(#csmHeroGlow)"/>
+          <g stroke="#9b6bff" stroke-width="2" opacity=".6">
+            <line x1="326" y1="168" x2="462" y2="168"/>
+          </g>
+          <g fill="#e8e8ef">
+            <circle cx="180" cy="392" r="20"/>
+            <rect x="162" y="412" width="36" height="54" rx="10"/>
+            <circle cx="268" cy="404" r="17"/>
+            <rect x="252" y="421" width="32" height="45" rx="9"/>
+            <circle cx="360" cy="396" r="19"/>
+            <rect x="343" y="415" width="34" height="51" rx="10"/>
+          </g>
+          <g fill="#ff4d8d" opacity=".85">
+            <circle cx="180" cy="392" r="20" opacity=".2"/>
+            <circle cx="360" cy="396" r="19" opacity=".2"/>
+          </g>
+          <text x="46" y="58" fill="#f0e94d" font-size="20" font-weight="800" font-family="Arial,sans-serif" letter-spacing="4">ORIGINAL · HD</text>
+          <text x="46" y="88" fill="#9a9aab" font-size="12" font-family="Arial,sans-serif" letter-spacing="2">COMMUNITY OF REAL STORIES</text>
+        </svg>
+        <div class="csm-hero__badge"><i></i> 正在直播 · 创作者开放麦 Vol.07</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S3 焦点内容 + 视频流 (M2 + M3) ============ -->
+<section class="csm-sec" id="csm-focus">
+  <div class="wrap">
+    <div class="csm-sec__head">
+      <div>
+        <div class="csm-sec__kicker">Focus · 官方精选</div>
+        <h2>本周<em>焦点</em>内容</h2>
+      </div>
+      <p class="csm-sec__desc">从深夜片场到城市街头，艹死我的视频为每一次真实表达保留一个位置。</p>
+    </div>
+
+    <div class="csm-focus">
+      <!-- 重点大卡 -->
+      <article class="csm-focus__card">
+        <svg viewBox="0 0 720 405" role="img" aria-label="专题封面：深夜剪辑实验室的剪辑台与多屏画面">
+          <defs>
+            <linearGradient id="csmFocusGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#12121a"/>
+              <stop offset="1" stop-color="#241a33"/>
+            </linearGradient>
+          </defs>
+          <rect width="720" height="405" fill="url(#csmFocusGrad)"/>
+          <g opacity=".35" stroke="#3c3c52">
+            <line x1="0" y1="120" x2="720" y2="120"/>
+            <line x1="0" y1="240" x2="720" y2="240"/>
+            <line x1="240" y1="0" x2="240" y2="405"/>
+            <line x1="480" y1="0" x2="480" y2="405"/>
+          </g>
+          <rect x="70" y="58" width="380" height="214" rx="10" fill="#0a0a11" stroke="#43e8d8" stroke-width="2"/>
+          <polygon points="238,128 238,202 310,165" fill="#f0e94d"/>
+          <rect x="486" y="58" width="164" height="100" rx="8" fill="#0a0a11" stroke="#9b6bff"/>
+          <rect x="486" y="172" width="164" height="100" rx="8" fill="#0a0a11" stroke="#ff4d8d"/>
+          <g stroke="#43e8d8" stroke-width="4">
+            <line x1="100" y1="318" x2="620" y2="318"/>
+          </g>
+          <g fill="#f0e94d">
+            <rect x="140" y="300" width="46" height="36" rx="4"/>
+            <rect x="200" y="300" width="46" height="36" rx="4"/>
+            <rect x="260" y="300" width="46" height="36" rx="4"/>
+          </g>
+          <g fill="#ff4d8d">
+            <rect x="380" y="300" width="46" height="36" rx="4"/>
+            <rect x="440" y="300" width="46" height="36" rx="4"/>
+          </g>
+          <text x="70" y="382" fill="#9a9aab" font-size="15" font-family="Arial,sans-serif" letter-spacing="3">NIGHT EDIT LAB · EP12</text>
+          <circle cx="654" cy="42" r="9" fill="#ff4d8d"/>
+        </svg>
+        <div class="csm-focus__body">
+          <h3>深夜剪辑实验室 EP12：一个长镜头里的城市呼吸</h3>
+          <p>导演阿蕉用 7 分 22 秒的单镜头，记录了凌晨四点的批发市场。从机位选择到声音设计，这期官方精品内容完整拆解了「不剪辑」的剪辑逻辑，适合所有想提升叙事节奏的创作者反复观看。</p>
+          <div class="csm-tags" style="margin-bottom:12px">
+            <span class="csm-tag csm-tag--cyan">创作幕后</span>
+            <span class="csm-tag">教程干货</span>
+            <span class="csm-tag csm-tag--pink">官方发布</span>
+          </div>
+          <div class="csm-meta">
+            <span>导演 阿蕉</span><span>播放 48.2 万</span><span>点赞 3.6 万</span><span>收藏 2.1 万</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 文字列表 -->
+      <div class="csm-focus__list">
+        <article class="csm-vlist-item">
+          <div class="csm-vlist-item__idx">01</div>
+          <div>
+            <h3>在城中村拍出一部「有呼吸感」的短片</h3>
+            <p>从选题会到杀青只用了 11 天，摄影师小林分享了如何用自然光与手持稳定器完成一次低成本高质量拍摄。</p>
+            <div class="csm-tags"><span class="csm-tag">经验分享</span><span class="csm-tag csm-tag--cyan">城市探索</span></div>
+          </div>
+        </article>
+        <article class="csm-vlist-item">
+          <div class="csm-vlist-item__idx">02</div>
+          <div>
+            <h3>声音创作：让弹幕都安静下来的 3 个技巧</h3>
+            <p>拟音师老K用菜市场的塑料袋、铁皮和一把旧椅子，做出了整部短片的情绪底色，本期完整展示录音流程。</p>
+            <div class="csm-tags"><span class="csm-tag csm-tag--pink">实用技巧</span><span class="csm-tag">创作幕后</span></div>
+          </div>
+        </article>
+        <article class="csm-vlist-item">
+          <div class="csm-vlist-item__idx">03</div>
+          <div>
+            <h3>镜头之外：三位素人创作者的第一次开机</h3>
+            <p>他们不是科班出身，却在艹死我的视频社区收获了第一批观众。这支访谈记录了普通人拿起相机的第一个月。</p>
+            <div class="csm-tags"><span class="csm-tag csm-tag--cyan">人物访谈</span><span class="csm-tag">真实</span></div>
+          </div>
+        </article>
+        <article class="csm-vlist-item">
+          <div class="csm-vlist-item__idx">04</div>
+          <div>
+            <h3>拍下你楼下的早餐摊：一场社区共创实验</h3>
+            <p>来自 9 个城市的 27 位创作者，用同一套镜头语言记录了各自的早餐摊。多元视角，是社区最好的注释。</p>
+            <div class="csm-tags"><span class="csm-tag">活动企划</span><span class="csm-tag csm-tag--pink">社区参与</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ M3 热门视频流 三列卡片 ============ -->
+<section class="csm-sec" id="csm-stream">
+  <div class="wrap">
+    <div class="csm-sec__head">
+      <div>
+        <div class="csm-sec__kicker">Stream · 持续更新</div>
+        <h2>热门<em>视频</em>流</h2>
+      </div>
+      <a class="csm-link-more" href="#csm-focus">查看全部精品内容 →</a>
+    </div>
+
+    <div class="csm-vgrid">
+      <!-- card 1 -->
+      <article class="csm-vcard">
+        <div class="csm-vcard__cover">
+          <svg viewBox="0 0 400 225" role="img" aria-label="视频封面：雨夜电动车穿行在霓虹街道">
+            <rect width="400" height="225" fill="#101826"/>
+            <g opacity=".5">
+              <rect x="0" y="150" width="400" height="75" fill="#0a0f18"/>
+              <circle cx="70" cy="60" r="40" fill="#1d2c44"/>
+              <circle cx="330" cy="80" r="30" fill="#22314a"/>
+            </g>
+            <g stroke-linecap="round">
+              <line x1="40" y1="223" x2="40" y2="120" stroke="#2c4a6e" stroke-width="3"/>
+              <line x1="120" y1="223" x2="120" y2="80" stroke="#2c4a6e" stroke-width="3"/>
+              <line x1="260" y1="223" x2="260" y2="100" stroke="#2c4a6e" stroke-width="3"/>
+              <line x1="360" y1="223" x2="360" y2="60" stroke="#2c4a6e" stroke-width="3"/>
+            </g>
+            <g fill="#43e8d8" opacity=".9">
+              <rect x="60" y="150" width="8" height="40"/>
+              <rect x="150" y="120" width="8" height="60"/>
+              <rect x="300" y="170" width="8" height="30"/>
+            </g>
+            <g fill="#f0e94d">
+              <circle cx="200" cy="150" r="26"/>
+              <rect x="186" y="176" width="28" height="24" rx="6"/>
+            </g>
+            <path d="M120 200 Q200 180 280 200" stroke="#ff4d8d" stroke-width="4" fill="none"/>
+          </svg>
+          <div class="csm-vcard__play"><span>▶</span></div>
+        </div>
+        <div class="csm-vcard__body">
+          <h3>雨夜骑行 38 公里：我用镜头丈量这座城市的另一面</h3>
+          <p>一个人、一台旧电动车、一部手机，记录了城市入夜后的真实呼吸。</p>
+          <div class="csm-tags"><span class="csm-tag csm-tag--cyan">城市探索</span><span class="csm-tag">日常记录</span></div>
+          <div class="csm-vcard__foot">
+            <div class="csm-vcard__author">
+              <span class="csm-ava" style="background:#43e8d8">雨</span>
+              <span>雨林不睡</span>
+            </div>
+            <div class="csm-act">
+              <button data-csm-like>♥ <span>1.2k</span></button>
+              <button data-csm-save>☆</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- card 2 -->
+      <article class="csm-vcard">
+        <div class="csm-vcard__cover">
+          <svg viewBox="0 0 400 225" role="img" aria-label="视频封面：书桌上摊开的剧本与台灯暖光">
+            <rect width="400" height="225" fill="#231a17"/>
+            <rect x="0" y="160" width="400" height="65" fill="#2e231f"/>
+            <circle cx="300" cy="70" r="58" fill="#f0a54d" opacity=".22"/>
+            <circle cx="300" cy="70" r="26" fill="#f0e94d" opacity=".8"/>
+            <g fill="#d9cfbf">
+              <rect x="50" y="120" width="150" height="10" rx="5"/>
+              <rect x="50" y="138" width="120" height="8" rx="4"/>
+              <rect x="50" y="152" width="170" height="8" rx="4"/>
+              <rect x="50" y="166" width="100" height="8" rx="4"/>
+            </g>
+            <g stroke="#ff4d8d" stroke-width="2">
+              <line x1="60" y1="130" x2="140" y2="130"/>
+              <line x1="70" y1="146" x2="130" y2="146"/>
+            </g>
+            <rect x="230" y="140" width="90" height="60" rx="6" fill="#3a2b22" stroke="#9b6bff"/>
+            <circle cx="275" cy="170" r="14" fill="#9b6bff" opacity=".7"/>
+          </svg>
+          <div class="csm-vcard__play"><span>▶</span></div>
+        </div>
+        <div class="csm-vcard__body">
+          <h3>剧本写到第 9 稿：我终于接受了“不完美”</h3>
+          <p>从灵感爆发到推倒重来，一个编剧的真实创作减法，也送给正在焦虑的你。</p>
+          <div class="csm-tags"><span class="csm-tag csm-tag--pink">情感故事</span><span class="csm-tag">创作幕后</span></div>
+          <div class="csm-vcard__foot">
+            <div class="csm-vcard__author">
+              <span class="csm-ava" style="background:#9b6bff">编</span>
+              <span>林九稿</span>
+            </div>
+            <div class="csm-act">
+              <button data-csm-like>♥ <span>986</span></button>
+              <button data-csm-save>☆</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- card 3 -->
+      <article class="csm-vcard">
+        <div class="csm-vcard__cover">
+          <svg viewBox="0 0 400 225" role="img" aria-label="视频封面：球场边逆光下奔跑的年轻人剪影">
+            <rect width="400" height="225" fill="#0d1a14"/>
+            <circle cx="330" cy="60" r="46" fill="#43e8d8" opacity=".22"/>
+            <circle cx="330" cy="60" r="22" fill="#f0e94d" opacity=".85"/>
+            <rect x="0" y="170" width="400" height="55" fill="#132a1f"/>
+            <g fill="#0a1310">
+              <circle cx="120" cy="112" r="17"/>
+              <rect x="104" y="132" width="32" height="52" rx="9"/>
+              <circle cx="220" cy="126" r="14"/>
+              <rect x="207" y="143" width="26" height="42" rx="8"/>
+            </g>
+            <path d="M60 210 Q200 150 350 210" stroke="#43e8d8" stroke-width="3" fill="none" stroke-dasharray="8 8"/>
+            <g stroke="#f0e94d" stroke-width="2" opacity=".7">
+              <line x1="40" y1="40" x2="90" y2="40"/>
+              <line x1="40" y1="55" x2="76" y2="55"/>
+            </g>
+          </svg>
+          <div class="csm-vcard__play"><span>▶</span></div>
+        </div>
+        <div class="csm-vcard__body">
+          <h3>连续 100 天晨跑：身体先于情绪醒来</h3>
+          <p>一位普通上班族的跑步纪录，没有逆袭剧本，只有每天多坚持的三百米。</p>
+          <div class="csm-tags"><span class="csm-tag">健康运动</span><span class="csm-tag csm-tag--cyan">治愈影像</span></div>
+          <div class="csm-vcard__foot">
+            <div class="csm-vcard__author">
+              <span class="csm-ava" style="background:#f0e94d">跑</span>
+              <span>阿跑不慢</span>
+            </div>
+            <div class="csm-act">
+              <button data-csm-like>♥ <span>2.4k</span></button>
+              <button data-csm-save>☆</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- card 4 -->
+      <article class="csm-vcard">
+        <div class="csm-vcard__cover">
+          <svg viewBox="0 0 400 225" role="img" aria-label="视频封面：手作木工台与散落的刨花">
+            <rect width="400" height="225" fill="#2a2015"/>
+            <rect x="0" y="150" width="400" height="75" fill="#3a2c1d"/>
+            <g fill="#c9a06a">
+              <ellipse cx="110" cy="180" rx="34" ry="10" transform="rotate(-12 110 180)"/>
+              <ellipse cx="300" cy="190" rx="42" ry="11" transform="rotate(8 300 190)"/>
+            </g>
+            <rect x="140" y="90" width="120" height="56" rx="8" fill="#8a6235" stroke="#f0e94d" stroke-width="2"/>
+            <g stroke="#f0e94d" stroke-width="3" stroke-linecap="round">
+              <line x1="160" y1="112" x2="240" y2="112"/>
+              <line x1="160" y1="128" x2="220" y2="128"/>
+            </g>
+            <circle cx="320" cy="76" r="28" fill="#ff4d8d" opacity=".25"/>
+            <circle cx="320" cy="76" r="12" fill="#ff4d8d" opacity=".8"/>
+          </svg>
+          <div class="csm-vcard__play"><span>▶</span></div>
+        </div>
+        <div class="csm-vcard__body">
+          <h3>给流浪猫做一间木屋：30 分钟手作教程</h3>
+          <p>边角料、旧木板和一点耐心，就能在楼下搭起一个温暖的角落。</p>
+          <div class="csm-tags"><span class="csm-tag">手作DIY</span><span class="csm-tag csm-tag--pink">萌宠日常</span></div>
+          <div class="csm-vcard__foot">
+            <div class="csm-vcard__author">
+              <span class="csm-ava" style="background:#ff4d8d">木</span>
+              <span>木木木工坊</span>
+            </div>
+            <div class="csm-act">
+              <button data-csm-like>♥ <span>1.8k</span></button>
+              <button data-csm-save>☆</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- card 5 -->
+      <article class="csm-vcard">
+        <div class="csm-vcard__cover">
+          <svg viewBox="0 0 400 225" role="img" aria-label="视频封面：深夜厨房里翻炒的锅气与火焰">
+            <rect width="400" height="225" fill="#241414"/>
+            <rect x="0" y="168" width="400" height="57" fill="#331c1c"/>
+            <circle cx="210" cy="120" r="70" fill="#ff4d8d" opacity=".18"/>
+            <g stroke="#f0a54d" stroke-width="4" fill="none" stroke-linecap="round">
+              <path d="M170 130 Q190 90 210 120 Q230 90 250 126"/>
+              <path d="M150 150 Q200 110 260 148"/>
+            </g>
+            <ellipse cx="205" cy="150" rx="62" ry="18" fill="#12100f" stroke="#f0e94d" stroke-width="3"/>
+            <g fill="#f0e94d">
+              <circle cx="176" cy="144" r="4"/>
+              <circle cx="198" cy="152" r="4"/>
+              <circle cx="226" cy="146" r="4"/>
+            </g>
+            <text x="40" y="50" fill="#ffb27a" font-size="14" font-family="Arial,sans-serif" letter-spacing="3">WOK HEI</text>
+          </svg>
+          <div class="csm-vcard__play"><span>▶</span></div>
+        </div>
+        <div class="csm-vcard__body">
+          <h3>凌晨两点的一碗面：夜宵摊主的一天</h3>
+          <p>他炒了二十年面，灶火比天亮得更早。这次我们把镜头对准了锅气背后的手。</p>
+          <div class="csm-tags"><span class="csm-tag">美食烹饪</span><span class="csm-tag csm-tag--cyan">人物访谈</span></div>
+          <div class="csm-vcard__foot">
+            <div class="csm-vcard__author">
+              <span class="csm-ava" style="background:#f0a54d">灶</span>
+              <span>灶边阿伟</span>
+            </div>
+            <div class="csm-act">
+              <button data-csm-like>♥ <span>3.1k</span></button>
+              <button data-csm-save>☆</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- card 6 -->
+      <article class="csm-vcard">
+        <div class="csm-vcard__cover">
+          <svg viewBox="0 0 400 225" role="img" aria-label="视频封面：旧胶片放映机与投射出的光斑">
+            <rect width="400" height="225" fill="#1b1720"/>
+            <rect x="0" y="176" width="400" height="49" fill="#241f2b"/>
+            <g fill="#3a3346">
+              <circle cx="110" cy="96" r="30"/>
+              <circle cx="110" cy="96" r="10" fill="#f0e94d"/>
+              <rect x="140" y="80" width="46" height="34" rx="5" fill="#4a4257"/>
+            </g>
+            <path d="M186 96 L380 34 L380 150 Z" fill="#f0e94d" opacity=".12"/>
+            <path d="M186 100 L380 58" stroke="#f0e94d" stroke-width="2" opacity=".4"/>
+            <g fill="#43e8d8" opacity=".8">
+              <circle cx="300" cy="80" r="4"/>
+              <circle cx="330" cy="96" r="3"/>
+              <circle cx="352" cy="70" r="5"/>
+              <circle cx="276" cy="108" r="3"/>
+            </g>
+            <text x="46" y="204" fill="#8f84a3" font-size="12" font-family="Arial,sans-serif" letter-spacing="2">16MM · MEMORY</text>
+          </svg>
+          <div class="csm-vcard__play"><span>▶</span></div>
+        </div>
+        <div class="csm-vcard__body">
+          <h3>把外婆的录像带转成了 4K：一次家庭修复计划</h3>
+          <p>那些模糊的旧影像里，藏着我们最不愿失去的日常。修复过程与情感一起被记录。</p>
+          <div class="csm-tags"><span class="csm-tag">情感故事</span><span class="csm-tag csm-tag--pink">治愈影像</span></div>
+          <div class="csm-vcard__foot">
+            <div class="csm-vcard__author">
+              <span class="csm-ava" style="background:#43e8d8">旧</span>
+              <span>旧时光修复所</span>
+            </div>
+            <div class="csm-act">
+              <button data-csm-like>♥ <span>4.2k</span></button>
+              <button data-csm-save>☆</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ M4 专题企划 ============ -->
+<section class="csm-sec" id="csm-special">
+  <div class="wrap">
+    <div class="csm-sec__head">
+      <div>
+        <div class="csm-sec__kicker">Special · 品牌企划</div>
+        <h2>专题<em>企划</em>与共创计划</h2>
+      </div>
+      <p class="csm-sec__desc">由官方发起、创作者共同参与的长期内容项目，持续生长。</p>
+    </div>
+    <div class="csm-special">
+      <article class="csm-special__card">
+        <span class="csm-special__status">更新中 · 每周三</span>
+        <h3>城市凌晨四点</h3>
+        <p>把镜头对准城市里最早醒来的人，记录那些沉默却重要的劳动。本季共 12 期，由 8 位创作者接力完成。</p>
+        <ul class="csm-special__items">
+          <li>EP08 · 批发市场里的第一声吆喝</li>
+          <li>EP09 · 早餐车旁的十七分钟</li>
+          <li>EP10 · 清扫街道的橙色身影</li>
+        </ul>
+      </article>
+      <article class="csm-special__card">
+        <span class="csm-special__status">报名中 · 12 月 20 日截止</span>
+        <h3>冬季创作挑战赛</h3>
+        <p>以「温度」为题，上传你的原创短片。官方提供流量扶持与专业评审，优秀作品将进入年度精选片单。</p>
+        <ul class="csm-special__items">
+          <li>赛道一 · 3 分钟以内故事短片</li>
+          <li>赛道二 · 一分钟竖屏纪实</li>
+          <li>赛道三 · 声音设计特别单元</li>
+        </ul>
+      </article>
+      <article class="csm-special__card">
+        <span class="csm-special__status">已上线 · 共 6 期</span>
+        <h3>镜头之外</h3>
+        <p>创作者访谈企划，聊作品，也聊作品背后的犹豫、失败与重新开始。让真实的创作过程被看见。</p>
+        <ul class="csm-special__items">
+          <li>第 4 期 · 拍砸了三次之后</li>
+          <li>第 5 期 · 我为什么不再追热点</li>
+          <li>第 6 期 · 一个人也能拍完的片子</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S5 创作者矩阵 双列简介 ============ -->
+<section class="csm-sec" id="csm-authors">
+  <div class="wrap">
+    <div class="csm-sec__head">
+      <div>
+        <div class="csm-sec__kicker">Creators · 内容生态</div>
+        <h2>创作者<em>矩阵</em></h2>
+      </div>
+      <a class="csm-link-more" href="#csm-deep">了解内容生态 →</a>
+    </div>
+    <div class="csm-authors" id="csmAuthorList">
+      <article class="csm-author">
+        <div class="csm-author__ava" style="background:#43e8d8">雨</div>
+        <div class="csm-author__info">
+          <h3>雨林不睡 <span>官方认证</span></h3>
+          <div class="csm-author__field">城市探索 · 纪实影像</div>
+          <p>白天是建筑绘图员，夜里骑电动车拍城市。擅长用手机长镜头记录街头细节，作品多次进入站内热度榜。相信真实比技巧更有力量，也愿意把踩过的坑分享给新人。</p>
+          <div class="csm-author__data"><span>作品 <b>86</b></span><span>粉丝 <b>12.4 万</b></span></div>
+          <button class="csm-author__more" data-csm-author="雨林不睡|城市探索 · 纪实影像|86 部作品 · 12.4 万粉丝，坚持以手机记录城市夜行，是本社区最具代表性的纪实创作者之一。">查看作者档案</button>
+        </div>
+      </article>
+      <article class="csm-author">
+        <div class="csm-author__ava" style="background:#9b6bff">编</div>
+        <div class="csm-author__info">
+          <h3>林九稿 <span>签约创作者</span></h3>
+          <div class="csm-author__field">编剧 · 情感故事</div>
+          <p>写了九年剧本，改过一百多稿。擅长把生活里的微小瞬间写成分镜，作品风格克制、后劲大。长期在社区连载「剧本是怎么改出来的」，被很多新人称为“避坑指南”。</p>
+          <div class="csm-author__data"><span>作品 <b>54</b></span><span>粉丝 <b>8.7 万</b></span></div>
+          <button class="csm-author__more" data-csm-author="林九稿|编剧 · 情感故事|54 部作品 · 8.7 万粉丝，专注于情感叙事与幕后拆解，擅长把创作焦虑转译成可执行的方法论。">查看作者档案</button>
+        </div>
+      </article>
+      <article class="csm-author">
+        <div class="csm-author__ava" style="background:#f0e94d">跑</div>
+        <div class="csm-author__info">
+          <h3>阿跑不慢 <span>官方认证</span></h3>
+          <div class="csm-author__field">健康运动 · 日常记录</div>
+          <p>普通上班族，连续四年记录晨跑。镜头里没有鸡血广告，只有喘气、汗水和偶尔的放弃。她说跑步教会自己的第一件事，是允许慢慢来。系列内容在社区持续更新中。</p>
+          <div class="csm-author__data"><span>作品 <b>132</b></span><span>粉丝 <b>6.1 万</b></span></div>
+          <button class="csm-author__more" data-csm-author="阿跑不慢|健康运动 · 日常记录|132 部作品 · 6.1 万粉丝，用长期主义记录普通人运动日常，内容真实、稳定、有陪伴感。">查看作者档案</button>
+        </div>
+      </article>
+      <article class="csm-author">
+        <div class="csm-author__ava" style="background:#ff4d8d">木</div>
+        <div class="csm-author__info">
+          <h3>木木木工坊 <span>品牌合作</span></h3>
+          <div class="csm-author__field">手作DIY · 家居收纳</div>
+          <p>一间开在老城区的小木工房，主理人做了十三年木活。视频里几乎不加速，就是想让人看清每一道刨花的来路。擅长把复杂工艺拆成可上手的步骤，教程实用性口碑极好。</p>
+          <div class="csm-author__data"><span>作品 <b>97</b></span><span>粉丝 <b>9.3 万</b></span></div>
+          <button class="csm-author__more" data-csm-author="木木木工坊|手作DIY · 家居收纳|97 部作品 · 9.3 万粉丝，以慢节奏工艺教程著称，强调可复现性与材料利用率。">查看作者档案</button>
+        </div>
+      </article>
+      <article class="csm-author">
+        <div class="csm-author__ava" style="background:#f0a54d">灶</div>
+        <div class="csm-author__info">
+          <h3>灶边阿伟 <span>官方认证</span></h3>
+          <div class="csm-author__field">美食烹饪 · 人物访谈</div>
+          <p>前餐厅主厨，现在的自由影像作者。他的视频总带着锅气，镜头里的人比菜更有滋味。长期拍摄夜宵摊与街边小店，试图为普通劳动者留下一份影像档案。</p>
+          <div class="csm-author__data"><span>作品 <b>71</b></span><span>粉丝 <b>11.8 万</b></span></div>
+          <button class="csm-author__more" data-csm-author="灶边阿伟|美食烹饪 · 人物访谈|71 部作品 · 11.8 万粉丝，以食物为切口做人物记录，镜头克制，情绪饱满。">查看作者档案</button>
+        </div>
+      </article>
+      <article class="csm-author">
+        <div class="csm-author__ava" style="background:#6ef2e4">旧</div>
+        <div class="csm-author__info">
+          <h3>旧时光修复所 <span>签约创作者</span></h3>
+          <div class="csm-author__field">治愈影像 · 文化访谈</div>
+          <p>一支专注于影像修复的小团队，帮人把老录像带、旧 DV 修复成高清。他们拍的不只是技术过程，更是影像背后一次次情感重逢。内容温暖，社区口碑长期领先。</p>
+          <div class="csm-author__data"><span>作品 <b>63</b></span><span>粉丝 <b>7.5 万</b></span></div>
+          <button class="csm-author__more" data-csm-author="旧时光修复所|治愈影像 · 文化访谈|63 部作品 · 7.5 万粉丝，以影像修复为切口讲述家庭记忆，擅长用细节打动观众。">查看作者档案</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ M15 品牌深度解析（≥800字） ============ -->
+<section class="csm-sec" id="csm-deep">
+  <div class="wrap">
+    <div class="csm-sec__head">
+      <div>
+        <div class="csm-sec__kicker">Deep Dive · 品牌故事</div>
+        <h2>关于「艹死我的视频」的<em>深度解析</em></h2>
+      </div>
+      <p class="csm-sec__desc">一个名字有点冲的品牌，想认真聊聊内容、创作者与长期主义。</p>
+    </div>
+    <div class="csm-deep__grid">
+      <div class="csm-deep">
+        <h3>名字背后：为什么是这么一句话</h3>
+        <p>「艹死我的视频」这个名字，第一次听到的人大多会愣一下。它不是一句粗口的炫耀，而是一种近乎本能的感叹——当一段影像真的击中你时，语言往往会先失效。我们希望这个品牌名能保留那种原始的、未经修饰的震动感。在内容被算法和模板反复压缩的今天，<strong>真实</strong>反而成了稀缺品。因此，从品牌诞生第一天起，我们就把「真实、生猛、有力量」写进了官网的每一处细节里。</p>
+        <p>它是一个视频品牌，也是一个内容社区。我们不追求把每条视频都做成爆款，而是希望每一条作品都对得起创作者按下录制键的那一刻。<strong>官方网站</strong>上的焦点位不是价高者得，而是编辑与社区共同推选；热门榜单也不只看播放量，还看收藏率、完播率和评论质量。这些规则看起来有些“逆流量”，但正是它们让<strong>艹死我的视频</strong>在竞争激烈的内容行业里，保住了自己的质感与口碑。</p>
+
+        <h3>内容生态：让创作者先被看见</h3>
+        <p>我们把内容生态拆成三层：第一层是<strong>持续运营</strong>的原创内容池，覆盖城市探索、人物访谈、手作、运动、美食等多元题材；第二层是创作者成长体系，从新人训练营、选题工作坊到一对一的剪辑陪跑，帮助有表达欲的人跨过技术门槛；第三层是社区共创，通过挑战赛、投票、共创企划，让观众从“看客”变成参与者。</p>
+        <p>很多创作者的第一支片子都不完美：对焦不准、收音嘈杂、节奏拖沓。但我们的编辑团队会给出逐条反馈，而不是简单打回。这种耐心在<strong>垂直领域</strong>里并不常见。过去两年，社区里超过四成的新人作者在发布前三支作品后仍选择留下，这个留存率是我们最看重的数据之一。因为我们相信，一个平台的<strong>影响力</strong>不体现在首页有多热闹，而体现在有多少普通人愿意在这里长期创作。</p>
+
+        <h3>品质与正版：内容生意的底线</h3>
+        <p>所有在<strong>官网</strong>展示的精品内容，都经过版权核验与画质复核。我们为创作者提供高清上传、原片存储与批量下载能力，并明确标注素材授权范围。对品牌合作方而言，这意味着可追溯、可审计的内容来源；对创作者而言，这意味着作品不会被随意搬运或二次剪辑。我们坚持<strong>正版</strong>与<strong>原创</strong>，不是出于姿态，而是因为内容行业的信任一旦被消耗，就很难重建。</p>
+        <p>在商业化上，我们采取克制的策略：广告内容必须明确标识，且与社区调性匹配；品牌合作项目需经过编辑委员会评估。我们宁愿少接一些合作，也不愿让观众在打开视频时先怀疑它的动机。这种选择短期看是“慢”，长期看却是<strong>用户首选</strong>与<strong>值得信赖</strong>的基础。截至目前，平台合作品牌续约率保持在八成以上，这给了我们继续坚持的底气。</p>
+
+        <h3>社区与责任：做一个有温度的平台</h3>
+        <p>视频不只是内容，也是人与人之间的连接。我们在社区里设置了「创作灵感」板块，定期发布脚本模板、标题建议和剪辑思路；设置了「镜头之外」访谈，让创作者谈论失败与自我怀疑；也设置了举报与反馈通道，对抄袭、恶意搬运零容忍。这些看起来琐碎的机制，构成了一个平台<strong>持续运营</strong>的骨架。</p>
+        <p>我们还关注内容的社会价值。过去一年，社区联合创作者发起了乡村影像记录计划、老手艺抢救拍摄、青少年媒介素养公开课等公益项目。我们不认为一家视频公司必须承担多么宏大的使命，但至少可以让镜头多停留一会儿——多看一眼被忽略的人，多记录一次即将消失的手艺。<strong>用户至上</strong>不是一句口号，它意味着在每一次产品决策里，都把创作者和观众的长期体验放在短期收益之前。</p>
+        <p>未来，<strong>艹死我的视频</strong>会继续深耕原创影像这个<strong>垂直领域</strong>，把工具做得更顺手，把社区做得更包容，把内容做得更扎实。我们希望当有人问“哪里能看到真正有生命力的视频”时，会有人想起这个名字。这大概就是<strong>品牌</strong>两个字最朴素的意义。</p>
+      </div>
+      <aside class="csm-deep__side">
+        <h4>BRAND AT A GLANCE</h4>
+        <ul>
+          <li><b>品牌定位</b>原创视频内容社区与影像品牌，服务创作者与品牌方。</li>
+          <li><b>核心主张</b>真实、生猛、有力量，反对模板化的内容生产。</li>
+          <li><b>内容方向</b>城市探索、人物访谈、创作幕后、手作、运动、美食。</li>
+          <li><b>社区规模</b>3200+ 入驻创作者，128000+ 精选原创视频。</li>
+          <li><b>品质承诺</b>正版授权、高清画质、原创优先、编辑推荐制。</li>
+          <li><b>长期目标</b>成为创作者愿意长期停留的内容生态。</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S6 用户评价 双列短评 ============ -->
+<section class="csm-sec" id="csm-comments">
+  <div class="wrap">
+    <div class="csm-sec__head">
+      <div>
+        <div class="csm-sec__kicker">Voices · 真实口碑</div>
+        <h2>社区<em>评价</em>与回响</h2>
+      </div>
+      <p class="csm-sec__desc">来自创作者和观众的真实声音，有夸奖，也有认真提出的建议。</p>
+    </div>
+    <div class="csm-comments" id="csmCommentList">
+      <article class="csm-comment">
+        <div class="csm-stars">★★★★★</div>
+        <div class="csm-comment__head"><span class="csm-ava" style="background:#43e8d8">小</span><span class="csm-comment__who">小赵同学</span><span class="csm-comment__time">3 小时前</span></div>
+        <p>第一次投稿就被编辑认真点评了，连片头三秒的节奏都给了具体建议。说实话有点意外，这种反馈在别的平台很难遇到。</p>
+      </article>
+      <article class="csm-comment">
+        <div class="csm-stars">★★★★★</div>
+        <div class="csm-comment__head"><span class="csm-ava" style="background:#9b6bff">阿</span><span class="csm-comment__who">阿策不熬夜</span><span class="csm-comment__time">昨天</span></div>
+        <p>关注雨林不睡很久了，他的长镜头有一种让人安静下来的力量。这个社区最难得的是，真的在推有内容的作品，而不是只看数据。</p>
+      </article>
+      <article class="csm-comment">
+        <div class="csm-stars">★★★★☆</div>
+        <div class="csm-comment__head"><span class="csm-ava" style="background:#f0e94d">老</span><span class="csm-comment__who">老K的麦克风</span><span class="csm-comment__time">2 天前</span></div>
+        <p>声音设计的教程非常实用，步骤拆得很细。唯一的小建议是希望能加上工程文件的下载链接，方便跟着练。</p>
+      </article>
+      <article class="csm-comment">
+        <div class="csm-stars">★★★★★</div>
+        <div class="csm-comment__head"><span class="csm-ava" style="background:#ff4d8d">豆</span><span class="csm-comment__who">豆子不吃豆</span><span class="csm-comment__time">2 天前</span></div>
+        <p>作为纯观众，我最喜欢这里的推荐。没有夸张的标题党，点开基本都能看下去。希望专题企划能多更新几期。</p>
+      </article>
+      <article class="csm-comment">
+        <div class="csm-stars">★★★★☆</div>
+        <div class="csm-comment__head"><span class="csm-ava" style="background:#43e8d8">摄</span><span class="csm-comment__who">摄影阿南</span><span class="csm-comment__time">3 天前</span></div>
+        <p>上传 4K 原片的体验比之前稳定多了，批量下载也省了不少事。如果审核进度能再透明一点就更好了。</p>
+      </article>
+      <article class="csm-comment">
+        <div class="csm-stars">★★★★★</div>
+        <div class="csm-comment__head"><span class="csm-ava" style="background:#f0a54d">夜</span><span class="csm-comment__who">夜宵观察员</span><span class="csm-comment__time">4 天前</span></div>
+        <p>灶边阿伟那期夜宵摊看哭了。片子没有煽情，就是安静地拍手、拍火、拍热气，但情绪全在里面。这才是真正的纪实。</p>
+      </article>
+      <article class="csm-comment">
+        <div class="csm-stars">★★★★★</div>
+        <div class="csm-comment__head"><span class="csm-ava" style="background:#9b6bff">林</span><span class="csm-comment__who">林间有风</span><span class="csm-comment__time">5 天前</span></div>
+        <p>参加了冬季挑战赛，虽然没进复赛，但评审给的书面反馈我打印出来了。认真对待投稿的平台，值得继续参与。</p>
+      </article>
+      <article class="csm-comment">
+        <div class="csm-stars">★★★★☆</div>
+        <div class="csm-comment__head"><span class="csm-ava" style="background:#6ef2e4">旧</span><span class="csm-comment__who">旧相机收藏家</span><span class="csm-comment__time">1 周前</span></div>
+        <p>修复所的内容每次看都很治愈。希望以后能多聊聊不同年代录像带的修复难点，技术细节可以再多一点。</p>
+      </article>
+      <article class="csm-comment">
+        <div class="csm-stars">★★★★★</div>
+        <div class="csm-comment__head"><span class="csm-ava" style="background:#ff4d8d">创</span><span class="csm-comment__who">创作者小鹿</span><span class="csm-comment__time">1 周前</span></div>
+        <p>从零基础到拿到第一笔创作激励，在这里用了不到五个月。社区的创作灵感板块帮我解决了很多选题焦虑。</p>
+      </article>
+      <article class="csm-comment">
+        <div class="csm-stars">★★★★☆</div>
+        <div class="csm-comment__head"><span class="csm-ava" style="background:#f0e94d">阿</span><span class="csm-comment__who">阿七的猫</span><span class="csm-comment__time">1 周前</span></div>
+        <p>整体氛围很好，评论区比较友善。唯一希望举报处理能更快一些，偶尔还是能看到搬运内容。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ M10 企业动态 + M11 合作品牌 ============ -->
+<section class="csm-sec" id="csm-news">
+  <div class="wrap">
+    <div class="csm-sec__head">
+      <div>
+        <div class="csm-sec__kicker">Newsroom · 官方发布</div>
+        <h2>企业<em>动态</em></h2>
+      </div>
+      <p class="csm-sec__desc">官方发布的最新进展与合作信息，持续更新中。</p>
+    </div>
+    <div class="csm-news">
+      <article class="csm-news__item">
+        <div class="cs-m-date">2026.11.18</div>
+        <h3>创作者后台 3.2 发布：原片直传与批量下载上线</h3>
+        <p>本次更新优化了上传稳定性，支持 4K 原片直传，并新增作品批量下载功能，方便创作者归档与二次创作。</p>
+      </article>
+      <article class="csm-news__item">
+        <div class="cs-m-date">2026.11.09</div>
+        <h3>冬季创作挑战赛正式开放报名</h3>
+        <p>本届挑战赛设三个赛道，总奖金池与流量扶持升级，评审团由站内签约创作者与外部纪录片导演共同组成。</p>
+      </article>
+      <article class="csm-news__item">
+        <div class="cs-m-date">2026.10.27</div>
+        <h3>品牌故事专题「镜头之外」第 6 期上线</h3>
+        <p>本期对话独立创作者林九稿，聊了聊剧本反复修改背后的自我怀疑，以及如何把焦虑转化成可执行的创作方法。</p>
+      </article>
+    </div>
+    <div style="margin-top:30px">
+      <h3 style="font-size:15px;font-weight:800;margin-bottom:16px;letter-spacing:1px">合作品牌与伙伴</h3>
+      <div class="csm-partners">
+        <span class="csm-partner">光域影像器材</span>
+        <span class="csm-partner">南岸独立影像节</span>
+        <span class="csm-partner">山海声音工作室</span>
+        <span class="csm-partner">拾光胶片社</span>
+        <span class="csm-partner">城事文化基金</span>
+        <span class="csm-partner">木木木工坊</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S7 辅助：FAQ + 投稿 CTA ============ -->
+<section class="csm-sec" id="csm-faq">
+  <div class="wrap">
+    <div class="csm-sec__head">
+      <div>
+        <div class="csm-sec__kicker">Help · 用户支持</div>
+        <h2>常见<em>问题</em></h2>
+      </div>
+      <p class="csm-sec__desc">关于投稿、版权和社区规则，这里有一些常见解答。</p>
+    </div>
+    <div class="csm-faq">
+      <details open>
+        <summary>如何向「艹死我的视频」投稿？</summary>
+        <p>注册并完成创作者认证后，在创作中心点击“上传作品”，选择对应分区并填写标题、简介与标签即可。审核一般在 48 小时内完成，优质作品有机会进入官方精选位。</p>
+      </details>
+      <details>
+        <summary>平台对视频画质和格式有什么要求？</summary>
+        <p>推荐上传 MP4（H.264 编码），分辨率 1080P 及以上，帧率 24/25/30/50/60 均可。追求更高画质的创作者可上传 4K 原片，平台会保留原始文件用于后续下载。</p>
+      </details>
+      <details>
+        <summary>我的作品版权归谁？可以同步到其他平台吗？</summary>
+        <p>作品版权始终归创作者所有。平台仅在您授权范围内展示与推荐。我们鼓励多平台分发，但请勿将他人作品搬运至本站，搬运内容会被下架并影响账号信用。</p>
+      </details>
+      <details>
+        <summary>如何参加冬季创作挑战赛？</summary>
+        <p>在活动页面点击“报名参赛”，选择赛道并提交作品即可。每位创作者最多可提交 3 部作品，评审将综合创意、叙事完成度与画面完成度评分。</p>
+      </details>
+      <details>
+        <summary>企业或品牌方如何与平台合作？</summary>
+        <p>可通过页面底部的联系邮箱提交合作意向，说明品牌背景、合作形式与预算范围。我们的内容团队会在 5 个工作日内回复，并安排一次选题沟通。</p>
+      </details>
+      <details>
+        <summary>遇到抄袭或恶意搬运怎么办？</summary>
+        <p>在对应作品页点击“举报”，选择“抄袭搬运”并提交原始链接与创作证据。平台会启动人工复核，确认违规后将下架内容并对账号做相应处理。</p>
+      </details>
+      <details>
+        <summary>社区对内容尺度有什么规范？</summary>
+        <p>我们鼓励生猛与真实，但反对任何形式的违法、暴力、歧视与低俗内容。涉及未成年人、隐私信息或敏感场景的作品需做必要处理，具体细则可在社区公约中查看。</p>
+      </details>
+    </div>
+
+    <div class="csm-cta" style="margin-top:44px">
+      <div>
+        <h2>把你的镜头，交给愿意认真看的人</h2>
+        <p>无论你只有一部手机，还是一整套专业设备，艹死我的视频都欢迎你的第一支作品。官方投稿通道全年开放，期待与你一起丰富这个内容生态。</p>
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <button class="csm-btn csm-btn--primary" data-csm-open="submit">立即投稿</button>
+        <button class="csm-btn csm-btn--ghost" data-csm-open="feedback">意见反馈</button>
+        <button class="csm-btn csm-btn--ghost" id="csmCopyBtn">复制官网链接</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ S8 页脚 ============ -->
+<footer class="csm-footer">
+  <div class="wrap">
+    <div class="csm-footer__grid">
+      <div class="csm-footer__brand">
+        <a class="csm-logo" href="#csm-home">
+          <span class="csm-logo__mark">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><polygon points="4,2 4,14 13,8" fill="#12121a"/></svg>
+          </span>
+          <span>艹死我的<em>视频</em></span>
+        </a>
+        <p>艹死我的视频官方网站 · 专注原创影像与真实表达的内容社区。我们持续运营，为创作者与品牌搭建高品质、值得信赖的内容生态。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#csm-focus">官方精选</a></li>
+          <li><a href="#csm-stream">热门视频</a></li>
+          <li><a href="#csm-special">专题企划</a></li>
+          <li><a href="#csm-deep">品牌故事</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>社区</h4>
+        <ul>
+          <li><a href="#csm-authors">创作者矩阵</a></li>
+          <li><a href="#csm-comments">用户口碑</a></li>
+          <li><a href="#csm-news">企业动态</a></li>
+          <li><a href="#csm-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系与支持</h4>
+        <ul>
+          <li>合作邮箱：hello@csmyvideo.example</li>
+          <li>投稿邮箱：submit@csmyvideo.example</li>
+          <li>客服时间：周一至周五 10:00-19:00</li>
+          <li><button class="csm-author__more" data-csm-open="feedback" style="margin-top:2px">提交反馈</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="csm-footer__bottom">
+      <span>© 2026 艹死我的视频官网 · 版权所有 · 持续运营中</span>
+      <span>备案号：沪ICP备2026000000号-8 · 沪公网安备 00000000000000号</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ 交互层 ============ -->
+<div class="csm-toast" id="csmToast" role="status" aria-live="polite"></div>
+
+<div class="csm-modal" id="csmModal" role="dialog" aria-modal="true" aria-labelledby="csmModalTitle">
+  <div class="csm-modal__box">
+    <button class="csm-modal__x" id="csmModalClose" aria-label="关闭弹窗">×</button>
+    <h3 id="csmModalTitle">投稿</h3>
+    <p id="csmModalDesc">请填写作品信息，我们的编辑会在 48 小时内回复你。</p>
+    <div id="csmModalForm">
+      <input type="text" id="csmModalInput1" placeholder="作品标题" aria-label="作品标题">
+      <input type="text" id="csmModalInput2" placeholder="你的昵称 / 联系方式" aria-label="昵称或联系方式">
+    </div>
+    <button class="csm-btn csm-btn--primary" id="csmModalSubmit" style="width:100%;justify-content:center">提交</button>
+  </div>
+</div>
+
+<button class="csm-top-btn" id="csmTopBtn" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 移动端导航折叠 ---------- */
+  var burger = document.getElementById('csmBurger');
+  var mobileNav = document.getElementById('csmMobileNav');
+  if(burger && mobileNav){
+    burger.addEventListener('click', function(){
+      var open = mobileNav.classList.toggle('is-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      burger.textContent = open ? '✕' : '☰';
+    });
+    mobileNav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        mobileNav.classList.remove('is-open');
+        burger.textContent = '☰';
+        burger.setAttribute('aria-expanded','false');
+      });
+    });
+  }
+
+  /* ---------- Toast ---------- */
+  var toast = document.getElementById('csmToast');
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('is-on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('is-on'); }, 2200);
+  }
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchInput = document.getElementById('csmSearchInput');
+  var searchBtn = document.getElementById('csmSearchBtn');
+  function doSearch(){
+    if(!searchInput) return;
+    var q = searchInput.value.trim();
+    if(!q){
+      showToast('请输入关键词后再搜索');
+      return;
+    }
+    showToast('正在站内搜索「' + q + '」，已为你筛选相关视频与创作者');
+    var stream = document.getElementById('csm-stream');
+    if(stream) stream.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+  if(searchBtn) searchBtn.addEventListener('click', doSearch);
+  if(searchInput) searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+  });
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  document.querySelectorAll('[data-csm-like]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var span = btn.querySelector('span');
+      var liked = btn.classList.toggle('is-liked');
+      if(span){
+        var raw = span.textContent.replace(/[^\d.]/g,'');
+        var num = parseFloat(raw);
+        if(!isNaN(num)){
+          var unit = span.textContent.indexOf('k') > -1 ? 'k' : '';
+          num = liked ? num + 0.1 : Math.max(0, num - 0.1);
+          span.textContent = (Math.round(num * 10) / 10) + unit;
+        }
+      }
+      showToast(liked ? '已点赞，感谢支持' : '已取消点赞');
+    });
+  });
+  document.querySelectorAll('[data-csm-save]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var saved = btn.classList.toggle('is-saved');
+      btn.textContent = saved ? '★' : '☆';
+      showToast(saved ? '已收藏到我的片单' : '已取消收藏');
+    });
+  });
+
+  /* ---------- 作者弹窗 ---------- */
+  var modal = document.getElementById('csmModal');
+  var modalTitle = document.getElementById('csmModalTitle');
+  var modalDesc = document.getElementById('csmModalDesc');
+  var modalForm = document.getElementById('csmModalForm');
+  var modalSubmit = document.getElementById('csmModalSubmit');
+  var modalClose = document.getElementById('csmModalClose');
+
+  function openModal(title, desc, showForm){
+    if(!modal) return;
+    modalTitle.textContent = title;
+    modalDesc.textContent = desc;
+    modalForm.style.display = showForm ? 'block' : 'none';
+    modal.classList.add('is-open');
+  }
+  function closeModal(){
+    if(modal) modal.classList.remove('is-open');
+  }
+  if(modalClose) modalClose.addEventListener('click', closeModal);
+  if(modal) modal.addEventListener('click', function(e){
+    if(e.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeModal();
+  });
+
+  document.querySelectorAll('[data-csm-author]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var parts = (btn.getAttribute('data-csm-author') || '').split('|');
+      openModal('创作者档案 · ' + (parts[0] || '创作者'), parts[2] || '暂无更多信息', false);
+    });
+  });
+
+  /* ---------- 投稿 / 反馈弹窗 ---------- */
+  document.querySelectorAll('[data-csm-open]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var type = btn.getAttribute('data-csm-open');
+      if(type === 'submit'){
+        openModal('作品投稿', '填写作品标题与联系方式，编辑将在 48 小时内给出反馈。', true);
+        modalSubmit.textContent = '提交作品';
+      }else{
+        openModal('意见反馈', '告诉我们你遇到的问题或建议，我们会认真阅读每一条反馈。', true);
+        modalSubmit.textContent = '提交反馈';
+      }
+    });
+  });
+
+  if(modalSubmit){
+    modalSubmit.addEventListener('click', function(){
+      var v1 = document.getElementById('csmModalInput1');
+      var v2 = document.getElementById('csmModalInput2');
+      if(!v1.value.trim()){
+        showToast('请先填写内容');
+        v1.focus();
+        return;
+      }
+      v1.value = '';
+      v2.value = '';
+      closeModal();
+      showToast('提交成功，感谢你参与社区共建');
+    });
+  }
+
+  /* ---------- 复制链接 ---------- */
+  var copyBtn = document.getElementById('csmCopyBtn');
+  if(copyBtn){
+    copyBtn.addEventListener('click', function(){
+      var text = '艹死我的视频 - 官方品牌站';
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(function(){
+          showToast('链接已复制，欢迎分享给朋友');
+        }).catch(function(){
+          showToast('复制失败，请手动分享');
+        });
+      }else{
+        showToast('链接已复制，欢迎分享给朋友');
+      }
+    });
+  }
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = document.getElementById('csmTopBtn');
+  window.addEventListener('scroll', function(){
+    if(!topBtn) return;
+    if(window.scrollY > 520){
+      topBtn.classList.add('is-on');
+    }else{
+      topBtn.classList.remove('is-on');
+    }
+  }, {passive:true});
+  if(topBtn){
+    topBtn.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* ---------- 数据数字滚动 ---------- */
+  var counters = document.querySelectorAll('[data-csm-count]');
+  var counted = false;
+  function runCounters(){
+    if(counted) return;
+    var trigger = document.querySelector('.csm-hero__stats');
+    if(!trigger) return;
+    var rect = trigger.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 60){
+      counted = true;
+      counters.forEach(function(el){
+        var target = parseFloat(el.getAttribute('data-csm-count'));
+        var isFloat = el.getAttribute('data-csm-count').indexOf('.') > -1;
+        var start = 0, dur = 1200, t0 = null;
+        function step(ts){
+          if(!t0) t0 = ts;
+          var p = Math.min((ts - t0) / dur, 1);
+          var eased = 1 - Math.pow(1 - p, 3);
+          var val = target * eased;
+          if(isFloat){
+            el.textContent = val.toFixed(1);
+          }else{
+            el.textContent = Math.round(val).toLocaleString('en-US');
+          }
+          if(p < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      });
+    }
+  }
+  window.addEventListener('scroll', runCounters, {passive:true});
+  window.addEventListener('load', runCounters);
+
+})();
+</script>
+</body>
+            </html>
